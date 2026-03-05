@@ -1,0 +1,2 @@
+Nome:  ster
+Idade:  18
