@@ -1,29 +1,40 @@
-#Criar um função que receba 5 notas 
+#Criar um função que receba 5 notas 3
 
-#Notas do aluno ao longo do bimestre
-aluno =  (input("Digite o nome do aluno"))
+#Criação de uma função 
 
-notas_aluno = (input("Digite 5 notas do aluno"))
-
-
-#Criação de uma função
-def Bimestre(Notas_aluno):
-    print("O aluno:", aluno, "teve essas notas nesse bimestre:", notas_aluno )
-    
-    # Resultado das notas
-(Bimestre(notas_aluno))
-
-#Calculos
-
-def calculos(n1, n2, n3, n4, n5):
-    media = (n1 + n2 + n3 + n4 + n5) / 5
-    return media 
-def situacao (media):
-    if media >=6:     
-        return "aprovado"
+lista_notas = []
+valor = 1
+ 
+ 
+def recebe_nota():
+   
+    for valor in range(5):  #ranger fazendo a função de looping repetindo as 5 notas
+        nota = int(input("Digite um valor: "))
+        lista_notas.append(nota) #append para ADICIONAR a lista
+ 
+ 
+    #return lista_notas
+ 
+    valor = (sum(lista_notas) / len(lista_notas)) #SUM para somar as notas dentro da list, e dividimos / pela quantidade de valores na lista (LEN)
+    print(valor)
+    print(valor)
+    return valor
+   
+   
+ 
+#recebe_nota(1)
+ 
+def resultado_aluno(): #Definir a função para ver se o aluno esta aprovado
+   
+    valor = recebe_nota()
+    if valor >= 5:
+        print("Aluno aprovado!")
     else:
-        return "reprovado"
-    
-print("media", )
+        print("Aluno reprovado!")
+ 
+ 
+resultado_aluno()
 
 
+
+#prof o israel me ajudou pq eu nao tava conseguindo, salvei o codigo dele pra estudar
