@@ -41,6 +41,38 @@
                #CONTINUAÇÃO DA AULA DE API 🖥️
                   #CATALOGO DE APIS PARA USOS WEB GERADO GRATUTIATEMNTE PARA POUPAR O PROGRAMADOR DE FICAR PESQUISANDO 
                        #
+                       
+                       
+                       
+                       
+# IMPORTAÇÃO DE ARQUIVO EXECEL
+
+    # SER TIPO UMA DEF PARA GUARDAR INFOMAÇOES E APARECER E UM MODELO EXECEL
+       #chamar um IMPORT para guardar dados, digitar os dados do usuaurio (bilbio)
+         #excel = pd.DataFrame(dados)  para guardar as informaçoes 
+            #excel.to_excel("aula12/cadastro_aluno.xlsx", index=False) para guardar os dados 
+            
+                          #depois do ultimo o arquivo ja é gerado
+                          
+                          
+                          
+                          
+
+ # AULA PYTHON X SQL
+ 
+ 
+#conexão com o banco de dados
+# conexao = pySQL.connect(
+#     host="localhost",        # endereço do servidor
+#     user="seu_usuario",      # usuário do MySQL
+#     password="sua_senha",    # senha do MySQL
+#     database="bd_livrariaonline",# nome do banco já criado
+#     port=3306                # porta padrão
+# )
+
+# (CURSOR)  conversa com o banco (manda e recebe dados)
+
+ 
                   
                
                
