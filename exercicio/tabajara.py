@@ -39,7 +39,7 @@ print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 print("BEM VINDO AO BANCO TABAJARA 🏦")
 print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 
-
+print("")
 
 #Criar conta
 
@@ -49,7 +49,7 @@ print("Ja possui uma conta?:")
 opcao = input("R:")
 
 if opcao == "sim":
-     print("digite o seu nome:")
+     print("digite o seu nome😀:")
      print("")#separar linha 
      nome = input("R:")
      
@@ -72,7 +72,7 @@ elif opcao == "nao":
     print("Confirmar todos esse dados?")
     input()
     print("--------------------------")
-    print ("CONTA CRIADA!!!")
+    print ("CONTA CRIADA!!!🎉")
 print()#separar linha 
 
 
@@ -100,12 +100,13 @@ print("Senhor(A)",nome, "Escolha uma das opções abaixo:")
 print("1 - criar conta com dados bancarios  ")
 print("--------------------------") 
 print("2 - Acessar conta ")
+print("--------------------------") 
 
 
 
 #DADOS BANCARIOS
 
-dados_bancarios = int(input("Digite um numero (1 ou 2):"))
+dados_bancarios = int(input("Digite um numero  (1 / 2 / 3):"))
 
 if dados_bancarios == 1: #selecionar opçao 1
     print("Opção 1 SELECIONADA")
@@ -227,10 +228,95 @@ elif dados_bancarios == 2:
         print("Usuário não encontrado, tentar novamente ou realizar o cadastro")
 
 
+    print("") #separar linha
+
+    dados_bancarios = print("Voce escolheu: Saque, Deposito, Saldo ")
+
+    print("") #separar linha
+
+    print("O que deseja fazer?:")
+
+    print("")#separar linha
+
+    print("1 - Saque")
+    print("2 -  Deposito")
+    print("3 -   Saldo")
+
+    print("") #separar linha
 
 
 
 
+#==============OPÇÃO SAQUE ============
+    opcao = int(input("R: "))
+
+    if opcao == 1:
+        # ── SAQUE 
+        print("") #pular linha
+        valor_solicitado = int(input("  Digite o valor para saque: R$ ")) # Digitar valor
+        
+        taxa_saque = ()
+        
+        taxa_saque = valor_solicitado * taxa_saque
+        saldo = extrato_bancario - valor_solicitado - taxa_saque
+        
+
+
+        print("================================================")
+        print("      Saque realizado com sucesso!💸")
+        print(f"      Saque: R$ {valor_solicitado}")
+        print(f"      Valor em conta: R$ {saldo}")
+        print(f"      Taxa para saque ({tipo_conta}): {taxa_saque * 100}%")
+        print(f"      Valor de desconto saque: R$ {taxa_saque}")
+        print("================================================\n")
+
+
+
+
+
+#  =========== OPÇÃO DEPOSITO ==============
+    elif opcao == 2: 
+        
+        ler = pd.read_excel("exercicio/clientes.xlsx")
+        valor_deposito = ()
+        
+        
+        print(f"  Saldo atual em conta: R$ {extrato_bancario}")
+        print("")
+        
+        
+        valor_deposito = int(input("Digite o valor para deposito:"))
+        print("")
+        extrato_bancario = extrato_bancario + valor_deposito
+        
+        
+        print("================================================")
+        print(f"      Valor depositado: R$ {valor_deposito}")
+        print(f"      Saldo em conta: R$ {extrato_bancario}")
+        print("================================================\n")
+
+        ler.to_excel("exercicio/clientes.xlsx" , index=False)
+    
+        
+    
+    
+    
+    
+    
+    
+    # ============ OPÇÃO SALDO ============
+        
+        
+    elif opcao == 3:
+        
+        print("Sua conta e seu saldo: ")
+        
+        print("")
+        print("================================================")
+        print(f"   Tipo conta: {tipo_conta}")
+        print(f"   Saldo em conta: R$ {extrato_bancario}")
+        print("================================================\n")
+        
 
 
 
@@ -239,9 +325,13 @@ elif dados_bancarios == 2:
 
     
     
+    
 
-
-
+    
+    
+    
+    
+    
 
 
     
